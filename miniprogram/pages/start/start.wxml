@@ -1,0 +1,29 @@
+<!--start.wxml-->
+<view class="container">
+
+
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/images/more/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <image class="title" src="/images/more/title8.png"></image>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <!-- class 属性规定元素的类名（classname）。 -->
+        <!-- src	String		图片资源地址 -->
+        <!-- mode	String	'scaleToFill'	图片裁剪、缩放的模式 -->
+        <image class="logo" src="{{avatarUrl}}"></image>
+        <image class="wave" src="/images/more/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/images/more/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+        <image class="smalltitle" src="/images/more/confirm-word1.png"></image>
+
+
+        <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar confirm-btn">点击进入</button>
+
+        <text class="copyright" decode="true">copyright      @abcdefghijklmn</text>
+      </view>
+    </view>
+  </block>
+</view>

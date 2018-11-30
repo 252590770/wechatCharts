@@ -1,0 +1,12 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "description": "sss",
+  "main": "app.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@antv/f2-canvas": "~1.0.3",
+    "@antv/wx-f2": "~1.0.0"
+  }
+}
