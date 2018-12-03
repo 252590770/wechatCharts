@@ -9,11 +9,15 @@ Page({
     avatarUrl: './user-unlogin.png',
     userInfo: {}
   },
+
+
+
   //绑定一个按钮事件
   goToIndex: function() {
 
     wx.redirectTo({
       url: '/pages/main/main',
+      // url: '/pages/chartindex/index'
     });
 
   },
@@ -21,9 +25,8 @@ Page({
   //onLoad : 页面加载    生命周期函数
   //一个页面只会调用一次。
   onLoad: function() {
+
     var that = this
-
-
 
     if (!wx.cloud) {
       wx.redirectTo({
@@ -69,6 +72,7 @@ Page({
   onShow: function() {
 
 
+    setNavigationBarColor();
     Countdown();
 
  
@@ -129,6 +133,7 @@ Page({
       });
       wx.redirectTo({
         url: '/pages/main/main',
+        // url: '/pages/chartindex/index'
       });
     }
   },
@@ -153,6 +158,7 @@ function Countdown() {
     } else {
       wx.redirectTo({
         url: '/pages/main/main',
+        // url: '/pages/chartindex/index'
       });
     }
 
@@ -161,3 +167,14 @@ function Countdown() {
 };
 
  
+
+function  setNavigationBarColor () {
+  wx.setNavigationBarColor({
+    frontColor: '#ffffff',
+    backgroundColor: '#69c3aa',
+    animation: {
+      duration: 0,
+      timingFunc: 'linear'
+    }
+  })
+};

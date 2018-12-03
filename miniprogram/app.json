@@ -30,7 +30,6 @@
     "pages/charts/column-select/index",
     "pages/charts/steps-pan/index",
     "pages/charts/gradient-column/index",
-    "pages/main",
     "pages/main/main"
   ],
   "window": {

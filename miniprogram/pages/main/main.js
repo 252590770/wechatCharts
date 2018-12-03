@@ -114,7 +114,7 @@ Page({
     })
 
     wx.navigateTo({
-      url: '../chartindex/index',
+      url: '../index/index',
     })
 
 
